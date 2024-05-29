@@ -1,7 +1,7 @@
 <template>
   <div>
     <div class="container">
-      <div class="flex justify-between">
+      <div class="flex justify-between max-sm:flex-col">
         <div v-for="(item, index) in newsletter" :key="index">
           <div>
             <img :src="item.image" alt="" class="w-[85px] h-[85px]" />
@@ -24,14 +24,14 @@
               Join
             </button>
           </div>
-          <p class="text-[#727272]">
+          <p class="text-[#727272] max-sm:w-[350px]">
             We usually post offers and challenges in newsletter. We’re your
             online houseplant destination. We offer a wide range of houseplants
             and accessories shipped directly from our (green)house to yours!
           </p>
         </div>
       </div>
-      <div class="flex py-5 bg-[#46A3581A] gap-[150px] items-center">
+      <div class="flex py-5 bg-[#46A3581A] md:gap-[150px] items-center max-sm:flex-col">
         <img src="../assets/Group.png" alt="" />
         <div class="flex gap-3">
           <img src="../assets/location.svg" alt="" />

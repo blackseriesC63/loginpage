@@ -4,7 +4,7 @@
       <div class="flex justify-between py-4">
         <div class="flex justify-between gap-8">
           <a
-            href="#products"
+            href="#g"
             :class="{ active: activeLink === 'all' }"
             @click="toggleActive('all')"
             class="border-b-2 cursor-pointer"
@@ -12,7 +12,7 @@
             All Plants
           </a>
           <a
-            href="#products"
+            href="#g"
             :class="{ active: activeLink === 'new' }"
             @click="toggleActive('new')"
             class="border-b-2 cursor-pointer"
@@ -20,7 +20,7 @@
             New Arrivals
           </a>
           <a
-            href="#products"
+            href="#g"
             :class="{ active: activeLink === 'sale' }"
             @click="toggleActive('sale')"
             class="border-b-2 cursor-pointer"
@@ -28,7 +28,7 @@
             Sale
           </a>
         </div>
-        <div class="flex items-center">
+        <div class="flex items-center max-sm:hidden">
           <p class="mr-2">Sort by:</p>
           <select>
             <option value="name">Name</option>
@@ -36,7 +36,7 @@
           </select>
         </div>
       </div>
-      <div class="grid grid-cols-3 mb-8 gap-10">
+      <div class="grid md:grid-cols-3 grid-cols-2 mb-8 gap-10">
         <div v-for="(product, index) in products" :key="index">
           <div class="flex flex-col items-start gap-9 py-5 px-4 product_items">
             <img
